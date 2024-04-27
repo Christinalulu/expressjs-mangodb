@@ -1,3 +1,4 @@
+import mongoose from 'mongoose';
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -7,6 +8,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+mongoose.connect(process.env.DATABASE_URL || 'mongodb+srv://admin:Oslo123@myproject.ek7nch8.mongodb.net/MyProject?retryWrites=true&w=majority&appName=MyProject');
 var app = express();
 
 // view engine setup
