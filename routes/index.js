@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://admin:Oslo123@myproject.ek7nch8.mongodb.net/?retryWrites=true&w=majority&appName=MyProject";
+const uri = "mongodb+srv://admin:<Oslo123>@myproject.ek7nch8.mongodb.net/?retryWrites=true&w=majority&appName=MyProject";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
